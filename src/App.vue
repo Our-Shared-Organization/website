@@ -1,23 +1,53 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+
+async function auth(email, password) {
+  try {
+    const res = await fetch(`http://localhost:5053/client/auth?email=${email}&password=${password}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    })
+    const data = await res.json()
+    console.log(data)
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+// await auth("email", "21")
+
+async function register(email, password, name, surname, phone) {
+  try {
+    const res = await fetch(`http://localhost:5053/client/register?email=${email}&password=${password}&name=${name}&surname=${surname}&phone=${phone}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    })
+    const data = await res.json()
+    console.log(data)
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+// await register("anewone_email", "1231", "name", "surname", "123123")
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
   </header>
-
-  <RouterView />
+  <main>
+    <form>
+      <input />
+      <input />
+      <button type="submit">Вход</button>
+    </form>
+  </main>
 </template>
 
 <style scoped>
