@@ -2,14 +2,18 @@
 import { RouterLink } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 
-async function auth(email, password) {
+async function auth(phone, password) {
   try {
-    const res = await fetch(`http://localhost:5053/client/auth?email=${email}&password=${password}`, {
+    const res = await fetch(`http://localhost:5053/user/auth`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-    })
+      body: JSON.stringify({
+        "phone": phone,
+        "password": password
+      })
+    });
     const data = await res.json()
     console.log(data)
   } catch (error) {
@@ -17,15 +21,22 @@ async function auth(email, password) {
   }
 }
 
-// await auth("email", "21")
+await auth("+5", "123")
 
-async function register(email, password, name, surname, phone) {
+async function register(name, surname, phone, sex, password) {
   try {
-    const res = await fetch(`http://localhost:5053/client/register?email=${email}&password=${password}&name=${name}&surname=${surname}&phone=${phone}`, {
+    const res = await fetch(`http://localhost:5053/user/register`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
+      body: JSON.stringify({
+        "userName": name,
+        "userSurname": surname,
+        "userPhone": phone,
+        "userSex": sex,
+        "userPassword": password
+      })
     })
     const data = await res.json()
     console.log(data)
