@@ -1,35 +1,249 @@
 @import './base.css';
 
-#app {
-  max-width: 1280px;
+/* Container */
+.container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  padding: 0 1rem;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+/* Main Content */
+main {
+  margin-top: 6rem;
+  padding-bottom: 3rem;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.hero-photo {
+  width: 1400px;
+  height: 400px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+  object-fit: cover;
+}
+
+.hero-text h1 {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 300;
+  bottom: 420px;
+  left: 650px;
+}
+
+.hero-text h2 {
+  position: absolute;
+  font-size: 1.75rem;
+  font-weight: 700;
+  left: 640px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+/* Service Cards */
+.service-card {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+.service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  transition: background-color 0.3s;
+}
+
+.service-card:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay h3 {
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .overlay h3 {
+    font-size: 1rem;
   }
+}
+
+/* Work Cards */
+.work-card {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.work-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.work-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Price List */
+.price-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .price-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.price-image {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .price-image {
+    aspect-ratio: 1;
+  }
+}
+
+.price-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2d2d2d;
+  padding-bottom: 0.75rem;
+}
+
+.price-name {
+  color: rgba(250, 250, 250, 0.8);
+}
+
+.price-value {
+  color: #daa520;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+/* Masters Grid */
+.masters-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .masters-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.master-card {
+  cursor: pointer;
+}
+
+.master-photo {
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background-color: #1a1a1a;
+}
+
+.master-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.master-card:hover .master-photo img {
+  transform: scale(1.05);
+}
+
+.master-info {
+  text-align: center;
+}
+
+.master-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.master-specialty {
+  font-size: 0.875rem;
+  color: rgba(250, 250, 250, 0.6);
 }
