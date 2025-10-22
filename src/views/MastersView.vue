@@ -15,7 +15,7 @@ import NavBar from '@/components/NavBar.vue';
             <div class="masters-grid">
                 <div class="master-card">
                     <div class="master-photo">
-                        <img src="../src/assets/master-1.jpg" alt="Елена Васильевна">
+                        <!-- <img src="../src/assets/master-1.jpg" alt="Елена Васильевна"> -->
                     </div>
                     <div class="master-info">
                         <h3 class="master-name">Елена Васильевна</h3>
@@ -25,7 +25,7 @@ import NavBar from '@/components/NavBar.vue';
 
                 <div class="master-card">
                     <div class="master-photo">
-                        <img src="../src/assets/master-2.jpg" alt="Елена Васильевна">
+                        <!-- <img src="../src/assets/master-2.jpg" alt="Елена Васильевна"> -->
                     </div>
                     <div class="master-info">
                         <h3 class="master-name">Елена Васильевна</h3>
@@ -35,7 +35,7 @@ import NavBar from '@/components/NavBar.vue';
 
                 <div class="master-card">
                     <div class="master-photo">
-                        <img src="../src/assets/master-1.jpg" alt="Елена Васильевна">
+                        <!-- <img src="../src/assets/master-1.jpg" alt="Елена Васильевна"> -->
                     </div>
                     <div class="master-info">
                         <h3 class="master-name">Елена Васильевна</h3>
@@ -45,7 +45,7 @@ import NavBar from '@/components/NavBar.vue';
 
                 <div class="master-card">
                     <div class="master-photo">
-                        <img src="../src/assets/master-3.jpg" alt="Елена Васильевна">
+                        <!-- <img src="../src/assets/master-3.jpg" alt="Елена Васильевна"> -->
                     </div>
                     <div class="master-info">
                         <h3 class="master-name">Елена Васильевна</h3>
@@ -55,7 +55,7 @@ import NavBar from '@/components/NavBar.vue';
 
                 <div class="master-card">
                     <div class="master-photo">
-                        <img src="../src/assets/master-4.jpg" alt="Елена Васильевна">
+                        <!-- <img src="../src/assets/master-4.jpg" alt="Елена Васильевна"> -->
                     </div>
                     <div class="master-info">
                         <h3 class="master-name">Елена Васильевна</h3>
@@ -65,7 +65,7 @@ import NavBar from '@/components/NavBar.vue';
 
                 <div class="master-card">
                     <div class="master-photo">
-                        <img src="../src/assets/master-5.jpg" alt="Елена Васильевна">
+                        <!-- <img src="../src/assets/master-5.jpg" alt="Елена Васильевна"> -->
                     </div>
                     <div class="master-info">
                         <h3 class="master-name">Елена Васильевна</h3>

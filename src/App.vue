@@ -94,5 +94,5 @@ async function addBooking(userId, serviceId, start, finish, status) {
 </script>
 
 <template>
-  <RouterView/>
+  <RouterView />
 </template>

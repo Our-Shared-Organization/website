@@ -15,7 +15,7 @@ import NavBar from '@/components/NavBar.vue';
             <!-- Price Group 1 -->
             <div class="price-section">
                 <div class="price-image">
-                    <img src="../src/assets/service-hair.jpg" alt="Женские стрижки">
+                    <img src="@/assets/images/service-hair.jpg" alt="Женские стрижки">
                 </div>
                 <div class="price-list">
                     <div class="price-item">
@@ -58,14 +58,14 @@ import NavBar from '@/components/NavBar.vue';
                     </div>
                 </div>
                 <div class="price-image">
-                    <img src="../src/assets/service-nails.jpg" alt="Ногтевой сервис">
+                    <img src="@/assets/images/service-nails.jpg" alt="Ногтевой сервис">
                 </div>
             </div>
 
             <!-- Price Group 3 -->
             <div class="price-section">
                 <div class="price-image">
-                    <img src="../src/assets/service-cosmetology.jpg" alt="Косметология">
+                    <img src="@/assets/images/service-cosmetology.jpg" alt="Косметология">
                 </div>
                 <div class="price-list">
                     <div class="price-item">
