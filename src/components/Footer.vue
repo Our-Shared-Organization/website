@@ -3,7 +3,8 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <div class="footer-logo">Ω</div>
+                    <!-- <div class="footer-logo">Ω</div> -->
+                    <img class="footer-logo" src="@/assets/logo.svg"/>
                 </div>
                 <div>
                     <h3 class="footer-title">Контакты</h3>

@@ -26,7 +26,7 @@ import NavBar from '@/components/NavBar.vue';
             <section class="section">
                 <h2 class="section-title">Наши услуги</h2>
                 <div class="grid">
-                    <div class="service-card">
+                    <div  class="service-card">
                         <img src="@/assets/images/service-hair.jpg" alt="Парикмахерские услуги">
                         <div class="overlay">
                             <h3>Парикмахерские услуги</h3>
