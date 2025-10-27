@@ -9,7 +9,7 @@
                 <RouterLink to="/" class="logo">Ω</RouterLink>
                 <div class="nav-links-right">
                     <RouterLink to="/services" class="nav-link">Услуги</RouterLink>
-                    <RouterLink to="/contacts" class="nav-link active"></RouterLink>
+                    <RouterLink to="/contacts" class="nav-link">Контакты</RouterLink>
                 </div>
             </div>
         </div>
